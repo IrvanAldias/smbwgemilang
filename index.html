@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>Slide 1</section>
+				<section>
+					<h1 class="animate__flipInX animate__slow">Appearance</h1>
+					<h3 class="animate__flipInX animate__slow" data-delay="700">for Reveal.js</h3>
+				</section>
+				<section>
+					<section>
+						<h2>Why?</h2>
+					</section>
+					<section>
+						<p class="small">In Powerpoint you can make slides with items that appear automatically with effects. This plugin for Reveal.js tries to achieve the same result.</p>
+						<p class="small">Appearance is easy to set up. It uses <a href="https://animate.style" target="_blank">Animate.css</a> by Daniel Eden for the animations, with some changes to allow for a non-animated state. </p>
+					</section>
+				</section>
+				<section data-background="#dddddd">Slide 2</section>
+				<section class="position-relative" data-background="./examples/assets/bg-section-1.jpg">
+					<!-- <div class="position-absolute top-0 start-0 translate-middle">a</div>
+					<div class="position-absolute top-0 start-50 translate-middle">b</div>
+					<div class="position-absolute top-0 start-100 translate-middle">c</div>
+					<div class="position-absolute top-50 start-0 translate-middle">d</div>
+					<div class="position-absolute top-50 start-50 translate-middle">e</div>
+					<div class="position-absolute top-50 start-100 translate-middle">f</div> -->
+					<!-- <div class="position-absolute top-100 start-0 translate-middle"> -->
+						<div style="text-align: start;">
+							<h4>Basement Level 1khkjh</h4>
+							<div data-aos="zoom-in-down">sadadadas</div>
+							<p class="animate__backInRight">Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
+							<ul>
+								<li class="animate__bounceInLeft">Add it to any text element</li>
+								<li class="animate__bounceInLeft">Like list items, or headers.</li>
+								<li class="animate__bounceInLeft">It adds some attention.</li>
+							</ul>
+							<img src="examples/assets/image2.png" alt="" srcset="" class="animate__backInRight">
+						</div>
+						<div class="position-absolute corner-bottom-left" style="text-align: right;">
+							<h4>Basement Level 1</h4>
+							<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
+						</div>
+					<!-- </div> -->
+					<!-- <div class="position-absolute top-100 start-50 translate-middle">h</div>
+					<div class="position-absolute top-100 start-100 translate-middle">i</div> -->
+			</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/appearance/appearance.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				// hash: true,
+				// backgroundTransition: 'slide',
+				// appearance: {
+				// 	autoappear: true,
+				// 	appearparents: true,
+				// 	hideagain: true,
+				// 	appearevent: "auto",
+				// 	csspath: '',
+				// 	animatecsspath: {
+				// 		link : 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css',
+				// 		compat : 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css',
+				// 	},
+				// },
+				transition: "slide",
+				history: true,
+				width: 1050,
+				appearance: {
+					appearparents: true,
+					hideagain: true,
+					appearevent: "auto",
+					autoappear: true,
+					autoelements: {
+						"ul li": "animate__fadeInLeft",
+						"ol li": "animate__fadeInRight"
+					},
+				},
+                compatibility: false,
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, Appearance ]
+			});
+		</script>
+	</body>
+</html>
